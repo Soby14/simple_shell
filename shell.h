@@ -23,6 +23,6 @@ void *_calloc(unsigned int nmember, unsigned int size);
 char **_splits(char *strn, char *sep);
 
 /*GLOBAL VAR*/
-extern char **envrion;
+extern char **environ;
 
 #endif

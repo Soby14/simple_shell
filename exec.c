@@ -20,7 +20,7 @@ int exec(char **args)
 	else
 	{
 		wait(&status);
-		if (WIFEXITED(status);
+		if (WIFEXITED(status))
 	}
 
 	return (status);
