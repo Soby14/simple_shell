@@ -23,7 +23,7 @@ void *_calloc(unsigned int nmember, unsigned int size)
 		return (NULL);
 	
 	(; index < (nmember * size); index++)
-			ptr[index] = 0;
+		ptr[index] = 0;
 
-			return (ptr);
+	return (ptr);
 }
