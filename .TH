@@ -1,0 +1,5 @@
+.SH DESCRIPTION
+Simple Shell is a command line interpreter developed in the c language, emulating basic functionality similar to "sh ".
+
+.FOR .SH COMPILATION, .SH MODES, .SH EXAMPLES LOOK AT README.md FILE
+

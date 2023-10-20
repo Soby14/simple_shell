@@ -22,10 +22,10 @@ char *search_path(char *cmd)
 	if (stat(cmd, &info) == 0)
 		return (cmd);
 
-	path_cpy = malloc(_strnlen(path) = 1);
+	path_cpy = malloc(_strnlen(path) + 1);
 
 	path_cpy = _strncpy(path_cpy, path);
-	path_split = _split(path_cpy, ":");
+	path_split = _splits(path_cpy, ":");
 
 	while (path_split[i])
 	{

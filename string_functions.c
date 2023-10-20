@@ -68,7 +68,7 @@ char **_splits(char *strn, char *sep)
 	char *aux, **split_strn;
 	int i = 0;
 
-	aux = strtok(strn, sep);
+	aux = strntok(strn, sep);
 	split_strn = (char **)_calloc(100, sizeof(char *));
 
 	if (!split_strn)
@@ -80,7 +80,7 @@ char **_splits(char *strn, char *sep)
 	while (aux)
 	{
 		split_strn[i] = aux;
-		aux = strok(NULL, sep);
+		aux = strntok(NULL, sep);
 		i++;
 	}
 	return (split_strn);
@@ -104,7 +104,7 @@ char *_strncat(char *dest, char *src)
 	for (a = 0; dest[a] != '\0'; a += 1)
 	{}
 
-	for (a = 0; dest[a] != '\0'; a += 1)
+	for (b = 0; src[b] != '\0'; b += 1)
 	{
 		dest[a] = src[b];
 		a++;
