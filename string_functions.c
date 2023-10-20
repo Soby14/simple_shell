@@ -52,7 +52,7 @@ char *_strncpy(char *dest, char *src)
 }
 
 /**
- * _split - Split a string into an array using a specified separator.
+ * _splits- Split a string into an array using a specified separator.
  *
  * Function splits the input string 'strn' into multiple substrings using the
  * provided separator 'sep' and returns an array containing the divided parts.
@@ -65,25 +65,25 @@ char *_strncpy(char *dest, char *src)
 
 char **_splits(char *strn, char *sep)
 {
-	char *aux, **split_strn;
+	char *aux, **split_str;
 	int i = 0;
 
 	aux = strtok(strn, sep);
-	split_strn = (char **)_calloc(100, sizeof(char *));
+	split_str = (char **)_calloc(100, sizeof(char *));
 
-	if (!split_strn)
+	if (!split_str)
 	{
-		free(split_strn);
+		free(split_str);
 		return (NULL);
 	}
 
 	while (aux)
 	{
-		split_strn[i] = aux;
+		split_str[i] = aux;
 		aux = strtok(NULL, sep);
 		i++;
 	}
-	return (split_strn);
+	return (split_str);
 }
 
 /**
