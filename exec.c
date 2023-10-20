@@ -14,7 +14,7 @@ int exec(char **args)
 
 	if (id == 0)
 	{
-		if (exec(args[0], args, environ) == -1)
+		if (exec(args[0], environ) == -1)
 			perror("Error");
 	}
 	else
@@ -24,3 +24,4 @@ int exec(char **args)
 	}
 
 	return (status);
+}
