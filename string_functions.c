@@ -1,4 +1,4 @@
-#include "main.c"
+#include "shell.h"
 
 /**
  * _strncmp - Compare two strings lexicographically.

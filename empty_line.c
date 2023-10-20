@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * empt_line - Check if an input line is empty.

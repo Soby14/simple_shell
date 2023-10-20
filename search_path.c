@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * search_path - Search for a file within the specified paths.

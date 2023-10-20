@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 
 /**
  * exec - Execute a command from a specified path in a child process.
