@@ -11,7 +11,7 @@
 
 /*PROTOTYPES*/
 int _strnlen(char *s);
-int execute(char **args);
+int exec(char **args);
 char *_strncpy(char *dest, char *src);
 void _env(void);
 char *_strncat(char *dest, char *src);
