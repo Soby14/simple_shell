@@ -36,12 +36,12 @@ int main(void)
 			exit_stats = 0;
 			continue;
 		}
-		args = _split(buff, " ");
+		args = _splits(buff, " ");
 		args[0] = search_path(args[0]);
 		if (args[0] != NULL)
-			exit_stats = execute(args);
+			exit_stats = exec(args);
 		else
-			perror(Error");
+			perror("Error");
 		free(args);
 	}
 	return (exit_stats);
