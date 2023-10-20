@@ -1,4 +1,5 @@
-#include "main.c"
+#include "shell.h"
+
 /**
  * main - Entry point for the shell, the core of the project.
  *
