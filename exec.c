@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * execute - Execute a command from a specified path in a child process.
+ * exec - Execute a command from a specified path in a child process.
  *
  * @args: An array of  arguments for the command.
  *
@@ -14,7 +14,7 @@ int exec(char **args)
 
 	if (id == 0)
 	{
-		if (execve(args[0], args, environ) == -1)
+		if (exec(args[0], args, environ) == -1)
 			perror("Error");
 	}
 	else

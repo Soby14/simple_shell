@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
-* _getenv - Retrieve the values of an environment variable.
+* _getenviron - Retrieve the values of an environment variable.
 *
 * @env_var: The name of the environment variable to retrieve.
 *
 * Return: A pointer to the content of the environment var, or NULL if not seen.
 */
-char *_getenv(char *env_var)
+
+char *_getenviron(char *env_var)
 {
 int i = 0, j;
 int status;
@@ -27,7 +29,7 @@ return (&environ[i][j + 1]);
 /**
 * _env - prints out environment
 */
-void _env(void)
+void _environ(void)
 {
 int i = 0;
 while (environ[i])
