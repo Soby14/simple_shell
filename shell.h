@@ -16,7 +16,7 @@ char *_strncpy(char *dest, char *src);
 void _env(void);
 char *_strncat(char *dest, char *src);
 int _strncmp(char *s1, char *s2);
-char *search_path(char *command);
+char *search_path(char *comd);
 char *_getenviron(char *env_var);
 int empt_line(char *buff);
 void *_calloc(unsigned int nmember, unsigned int size);
