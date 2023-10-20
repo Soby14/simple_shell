@@ -27,7 +27,7 @@ i++;
 return (&environ[i][j + 1]);
 }
 /**
-* _env - prints out environment
+* _environ - prints out environment
 */
 void _environ(void)
 {
